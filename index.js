@@ -369,15 +369,15 @@ const fruits= ["Banana","Orange","Apple","Mango","Pineapple"]
 //single ton
 //object literals
 
-// const jsuser={
-//     name: "Satyabrata",
-//     age: 18,
-//     adress: "Nuakheta",
-//     email: "satyabratapradhan88438@gmail.com",
-//     isLoggedIn: false,
-//     lastloginday: ["Monday","Tuesday"],
-//     [Symbol]: "$"
-// }
+const jsuser={
+    name: "Satyabrata",
+    age: 18,
+    adress: "Nuakheta",
+    email: "satyabratapradhan88438@gmail.com",
+    isLoggedIn: false,
+    lastloginday: ["Monday","Tuesday"],
+    [Symbol]: "$"
+}
 
 // console.log(jsuser.email)
 // console.log(jsuser["email"])
@@ -390,4 +390,9 @@ const fruits= ["Banana","Orange","Apple","Mango","Pineapple"]
 // }
 // console.log(jsuser.greeting); //wrong method
 // console.log(jsuser.greeting()) //right method
+
+// jsuser.greeting2 = function() {
+//     console.log(`${this.name} what are you doing now ?`)
+// }
+// console.log(jsuser.greeting2())
 
