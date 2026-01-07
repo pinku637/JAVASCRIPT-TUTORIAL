@@ -382,7 +382,7 @@ const fruits= ["Banana","Orange","Apple","Mango","Pineapple"]
 // console.log(jsuser.email)
 // console.log(jsuser["email"])
 // console.log(jsuser[Symbol])
-// Object.freeze(jsuser)
+// Object.freeze(jsuser) //now the obj cannot be changed
 // console.log(jsuser)
 
 // jsuser.greeting= function(){
@@ -392,7 +392,58 @@ const fruits= ["Banana","Orange","Apple","Mango","Pineapple"]
 // console.log(jsuser.greeting()) //right method
 
 // jsuser.greeting2 = function() {
-//     console.log(`${this.name} what are you doing now ?`)
+//     console.log(`${this.name}, what are you doing now ?`)
 // }
 // console.log(jsuser.greeting2())
+
+// const tinderUser= new Object()
+// console.log(tinderUser)
+
+// const tinderUser={}
+// tinderUser.id="03BSC2509"
+// tinderUser.name="SATYA"
+// tinderUser.isloggedIn= false
+//console.log(tinderUser);
+
+// const regularUser= {
+//     email:"satyabratapradhan88438@gmail.com",
+//     name:{
+//         firstName:"Satya",
+//         middleName:"brata",
+//         surname:"Pradhan"
+//     }
+// }
+// console.log(regularUser.name.firstName);
+
+const obj1={1:"A",2:"B"}
+// const obj2={1:"a",2:"b"}
+//const obj3={obj1,obj2}
+//const obj3= Object.assign({},obj1,obj2);
+//const obj3={...obj1,...obj2}
+//console.log(obj3);
+
+//console.log(Object.entries(obj1)) //Gives separated Datas
+//console.log(Object.keys(obj1));   //Gives Keys of Object
+//console.log(Object.values(obj1)); //Gives Values of object
+//console.log(jsuser.hasOwnProperty('name')); //Tells the value is present or not in the object
+
+"Object de-structure and JSON API intro "; //18
+
+const Creative={
+    name:"Creative Techno College",
+    Courses:"B.Sc.C,BCA,BBA",
+    place: "Baluakata,Angul",
+    pincode:759122
+}
+
+// console.log(Creative.name); //prints indirects
+
+// const {name}=Creative       //brings the value into front so that we can print it easily
+// console.log(name)
+// const {name:n}=Creative        //changes the key value to use it shortly but originalyy it was not changed
+// console.log(n);
+
+"JSON";
+
+
 
