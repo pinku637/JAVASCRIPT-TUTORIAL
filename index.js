@@ -415,7 +415,7 @@ const fruits= ["Banana","Orange","Apple","Mango","Pineapple"]
 // }
 // console.log(regularUser.name.firstName);
 
-const obj1={1:"A",2:"B"}
+// const obj1={1:"A",2:"B"}
 // const obj2={1:"a",2:"b"}
 //const obj3={obj1,obj2}
 //const obj3= Object.assign({},obj1,obj2);
@@ -429,12 +429,12 @@ const obj1={1:"A",2:"B"}
 
 "Object de-structure and JSON API intro "; //18
 
-const Creative={
-    name:"Creative Techno College",
-    Courses:"B.Sc.C,BCA,BBA",
-    place: "Baluakata,Angul",
-    pincode:759122
-}
+// const Creative={
+//     name:"Creative Techno College",
+//     Courses:"B.Sc.C,BCA,BBA",
+//     place: "Baluakata,Angul",
+//     pincode:759122
+// }
 
 // console.log(Creative.name); //prints indirects
 
@@ -443,7 +443,739 @@ const Creative={
 // const {name:n}=Creative        //changes the key value to use it shortly but originalyy it was not changed
 // console.log(n);
 
-"JSON";
+"Function In JS";
+
+//function declaration
+
+"Ex:-1";
+// function satya(){
+//     console.log("Name:Satyabrata Pradhan,Age:18,Adress:Nuakheta");
+// }
+// satya() //Function Call
+
+"Ex:-2";
+// function sum(Num1,Num2){     //Here Num1 and Num2 are the parameters
+//     console.log(Num1+Num2);
+// }
+// const result=sum(1,2)
+// console.log(result) //Output= Undefined because it only prints but doesn't returns the result
+"Ex:-3";
+// function sum(Num1,Num2){     //Here Num1 and Num2 are the parameters
+//     let result=Num1+Num2
+//     return result
+// }
+// const result=sum(5,6)
+// console.log(result);
+"Ex:-4";
+// function sum(Num1,Num2){     //Here Num1 and Num2 are the parameters
+//     return Num1+Num2
+// }
+// const result=sum(5,6)
+// console.log(result);
+"Ex:-5";
+// function login(username){
+//     return `${username} logged in succesfuly`
+// }
+// console.log(login("satya"));
+"Ex:-6";
+// function loginUserMessage(username ){
+//     if(username==="undefined"){
+//         console.log("PLease enter a username");
+//         return
+//     }
+//     return `${username} just logged in`
+// }
+// console.log(loginUserMessage("Satya"))
+
+"function with object";
+
+"Ex:1";
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200,300,400,600))
 
 
+"Ex:2";
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200,400,600))
 
+"Ex:3";
+// function handleObject(anyobject){
+//     console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);
+// }
+// handleObject({
+//     username: "Satya",
+//     prices: 199
+// })
+
+"Ex:4";
+// const myNewArray = [200, 400, 100, 600]
+
+// function returnSecondValue(getArray){
+//     return getArray[1]
+// }
+
+// console.log(returnSecondValue(myNewArray));
+// console.log(returnSecondValue([200, 400, 500, 1000]));
+
+"Global and local scope in javascript ";
+
+//var c = 300
+// let a = 300
+// if (true) {
+//     let a = 10
+//     const b = 20
+//     console.log("INNER: ", a);
+// }
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+
+// function one(){
+//     const username = "Satya"
+//     function two(){
+//         const website = "study"
+//         console.log(username);
+//     }
+//     //console.log(website);
+//     two()
+// }
+// one()
+
+// if (true) {
+//     const username = "Satya"
+//     if (username === "Satya") {
+//         const website = " Insta"
+//         //console.log(username + website);
+//     }
+//     //console.log(username);
+// }
+//console.log(username);
+
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+
+
+// console.log(addone(5))
+
+// function addone(num){
+//     return num + 1
+// }
+// addone(5)
+
+
+// addTwo(5)
+// const addTwo = function(num){
+//     return num + 2
+// }
+
+"THIS and arrow function";
+
+"Ex:1";
+// const user = {
+//     username: "Satya",
+//     price: 999,
+
+//     welcomeMessage: function() {
+//         console.log(`${this.username} , welcome to website`);
+//         //console.log(this);
+//     }
+
+// }
+// user.username = "sam"
+// user.welcomeMessage()
+
+// user.welcomeMessage()
+
+// console.log(this);
+
+// function sk(){
+//     let username = "SATYA"
+//     console.log(this.username);
+// }
+// sk()
+
+"Arrow Function";
+
+//Syntax: (Parameters/Arguments)=>{}
+"Ex:"
+// const name=(fname)=>{
+//     return `${fname},Your full name is Satyabrata Pradhan`;
+// }
+// console.log(name("satya"));
+ 
+// const chai = ()=> {
+//     let username = "SATYA"
+//     console.log(this.username);
+// }
+
+// const chai =  () => {
+//     let username = "hitesh"
+//     console.log(this);
+// }
+// chai()
+
+"Type:1";
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+
+"Type:2";
+// const addTwo = (num1, num2) => ( num1 + num2 )
+// console.log(addTwo(5,6));
+
+
+// const addTwo = (num1, num2) => ({username: "hitesh"})
+// console.log(addTwo());
+// console.log(addTwo(3, 4))
+
+
+// const myArray = [2, 5, 3, 7, 8]
+
+// myArray.forEach()
+
+"Immediately Invoked Function Expressions IIFE";
+
+// (function chai(){
+//     console.log(`DB CONNECTED`);
+// })();
+
+// ( (name) => {
+//     console.log(`DB CONNECTED TO ${name}`);
+// } )('SATYA')
+
+"How does javascript execute code + call stack?";
+
+// What is an Execution Context?
+// Answer:-
+// Imagine an Execution Context as a box or a container where your JavaScript code runs. Whenever you write code, it doesn't just run in a vacuum; it runs inside one of these boxes.
+// The box contains two specific things:
+// Memory (Variable Environment): Where variables and functions are stored.
+// Code (Thread of Execution): Where code is executed line-by-line.
+
+// The Two Types of "Boxes"
+"1.Global Execution Context (GEC):-";
+
+// This is the default box. As soon as you run a JS file, this box is created.
+// It creates the window object (in browsers) and the this keyword.
+// There is only one Global Execution Context in your entire program.
+
+"2.Function Execution Context (FEC):-";
+// Whenever you call (invoke) a function, a new box is created specifically for that function.
+// If you call a function 3 times, you get 3 different Function Execution Contexts.
+
+// How It Works (The 2 Phases)
+// When an Execution Context is created, it happens in two phases. Let's look at this code:
+
+// var x = 10;
+// function sayHi() {
+//     console.log("Hi");
+// }
+
+// Phase 1: Memory Creation (The "Skimming" Phase)
+
+// Before running a single line of code, JavaScript skims through your code to allocate memory.
+// It finds var x and stores it in memory as undefined. (This is why Hoisting exists!).
+// It finds function sayHi and stores the entire function code in memory.
+
+// "Phase 2: Code Execution (The Running Phase)"
+
+// Now, JavaScript runs through the code line-by-line.
+// It sees var x = 10; and updates the memory for x from undefined to 10.
+// It executes function calls if it finds them.
+
+"Visual Diagram: The Call Stack";
+
+// JavaScript uses a Call Stack to manage these boxes. It stacks them on top of each other.
+// Step 1: The Global Context is at the bottom.
+// Step 2: When you call a function, a Function Context is stacked on top.
+// Step 3: When the function finishes, its box is removed (popped) from the stack.
+
+//                    {Summary Table}
+// Term:-                                   Meaning:-
+// Global Context                           The main environment created when your script starts.
+// Function Context                         temporary environment created whenever a function is called.
+// Call Stack                               The system that keeps track of which "Context" is currently running.
+
+"Control Flow";
+
+// if
+// const isUserloggedIn = true
+// const temperature = 41
+
+// if ( temperature === 40 ){
+//     console.log("less than 50");
+// } else {
+//     console.log("temperature is greater than 50");
+// }
+// console.log("Execute");
+
+// <, >, <=, >=, ==,!=
+// ===(Checks value and data type also), !==(Checks if value and data type both are not equal)
+
+// const score = 200
+
+// if (score > 100) {
+//     let power = "fly"
+//     console.log(`User power: ${power}`);
+// }
+// console.log(`User power: ${power}`); //error due to local scope
+
+"Ex:-1";
+// const balance = 1000
+// if (balance < 500) {
+//     console.log("less than 500");
+// } else if (balance < 750) {
+//     console.log("less than 750");
+    
+// } else if (balance < 900) {
+//     console.log("less than 750");
+    
+// } else {
+//     console.log("less than 1200");
+// }
+
+// const userLoggedIn = true
+// const debitCard = true
+// const loggedInFromGoogle = false
+// const loggedInFromEmail = true
+
+// if (userLoggedIn && debitCard && 2==2) {
+//     console.log("Allow to buy course");
+// }
+
+// if (loggedInFromGoogle || loggedInFromEmail) {
+//     console.log("User logged in");
+// }
+
+"switch case";
+
+//SYNTAX:
+
+// switch (key) {
+//     case value1:
+//         break;
+//     case value2:
+//         break;
+//     default:
+//         break;
+// }
+
+"Ex:-1";
+
+// const month = "march"
+// switch (month) {
+//     case "jan":
+//         console.log("January");
+//         break;
+//     case "feb":
+//         console.log("feb");
+//         break;
+//     case "march":
+//         console.log("march");
+//         break;
+//     case "april":
+//         console.log("april");
+//         break;
+//     case "may":
+//         console.log("may");
+//         break;
+//     case "june":
+//         console.log("june");
+//         break;
+//     case "july":
+//         console.log("july");
+//         break;
+//     case "august":
+//         console.log("august");;
+//         break;
+//     case "september":
+//         console.log("september");
+//         break;
+//     case "october":
+//         console.log("october");
+//         break;
+//     case "november":
+//         console.log("november");
+//         break;
+//     case "december":
+//         console.log("december");
+//         break;
+//     default:
+//         console.log("default case match");
+//         break;
+// }
+
+"Truthy and Falsy values in Java Script";
+
+// const userEmail = []
+
+// if (userEmail) {
+//     console.log("Got user email");
+// } else {
+//     console.log("Don't have user email");
+// }
+
+// falsy values
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
+
+// truthy values
+//  "0", 'false', " ", [], {}, function(){}
+
+"Ex:-";
+// let userEmail = []
+// if (userEmail.length > 0) {
+//     console.log("Got user email");
+// } else {
+//     console.log("Don't have user email");
+// }
+"Ex:-";
+// const emptyObj = {}
+// if (Object.keys(emptyObj).length === 0) {
+//     console.log("Object is empty");
+// }
+
+// Nullish Coalescing Operator (??): null,undefined
+
+// let val1;
+// val1 = 5 ?? 10 //Answer=5
+// val1 = 0 ?? 15 //Answer=0
+// val1 = "" ?? "Hello" //Answer=""
+// val1 = false ?? true //Answer=false
+// val1 = null ?? 10 //Answer=10
+// val1 = null ?? 10 ?? 20 //Answer=10
+// val1 = undefined ?? 15 //Answer=15
+// console.log(val1);
+"Ternary Operator";
+
+// Syntax:
+// condition ? true : false
+
+"Ex:-"
+// const iceTeaPrice = 100
+// iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+
+"Ex:-"
+// const age = 18
+// age >= 18 ? console.log("You can vote") : console.log("You cannot vote")
+
+
+"Loops in Java Script";
+
+"for loop";
+"Ex:-1";
+// for (let i = 0; i <= 10; i++) {
+//     const element = i;
+//     if (element == 5) {
+//         console.log("5 is best number");
+//     }
+//     console.log(element);
+// }
+"Ex:-2";
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Outer loop value: ${i}`);
+//    for (let j = 1; j <= 10; j++) {
+//     console.log(`Inner loop value ${j} and outr loop ${i}`);
+//     console.log(i + '*' + j + ' = ' + i*j );
+//    } 
+// }
+"Ex:-3";
+//let myArray = ["flash", "batman", "superman"]
+//console.log(myArray.length);
+// for (let index = 0; index < myArray.length; index++) {
+//     const element = myArray[index];
+//        console.log(element);
+// }
+
+
+"break and continue";
+"Ex:-1";
+// for (let index = 1; index <= 20; index++) {
+//     if (index == 5) {
+//         console.log(`Detected 5`);
+//         break
+//     }
+//    console.log(`Value of i is ${index}`);
+// }
+"Ex:-2";
+// for (let index = 1; index <= 20; index++) {
+//     if (index == 5) {
+//         console.log(`Detected 5`);
+//         continue
+//     }
+//    console.log(`Value of i is ${index}`);
+// }
+
+
+"while loop";
+"Ex:-1";
+// let index = 0
+// while (index <= 10) {
+//     console.log(`Value of index is ${index}`);
+//     index = index + 2
+// }
+
+"Ex:-2";
+// let myArray = ['flash', "batman", "superman"]
+// let arr = 0
+// while (arr < myArray.length) {
+//     console.log(`Value is ${myArray[arr]}`);
+//     arr = arr + 1
+// }
+
+
+"do while loop";
+"Ex:-1";
+// let score = 11
+// do {
+//     console.log(`Score is ${score}`);
+//     score++
+// } while (score <= 10);
+
+"Ex:-2";
+// let arrindex = 0
+// do {
+//     console.log(`Value is ${myArray[arrindex]}`);
+//     arrindex++
+// } while (arrindex < myArray.length);
+
+"High Order Array loops";
+
+// for of
+
+// ["", "", ""]
+// [{}, {}, {}]
+"Ex:-1";
+// const arr = [1, 2, 3, 4, 5]
+// for (const i of arr) {
+//     console.log(i);
+// }
+"Ex:-2";
+// const myString = "Hello World"
+// for (const char of myString) {
+//     console.log(char);
+// }
+"Ex:-3";
+// const greetings = "Hello world!"
+// for (const greet of greetings) {
+//     console.log(`Each char is ${greet}`)
+// }
+
+
+"Maps";
+//sequential data structure stores data in key value pair and duplicates are not allowed in keys.
+
+"Ex:-1";
+// const map = new Map()
+// map.set('IN', "India")
+// map.set('USA', "United States of America")
+// map.set('Fr', "France")
+// map.set('IN', "India")
+// console.log(map);
+// for (const [key, value] of map) {
+//       console.log(key, ':-', value);
+// }
+"Ex:-2";
+// const myObject = {
+//     game1: 'NFS',
+//     game2: 'Spiderman'
+// }
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);
+// }
+//shows error because object is not iterable directly.
+//we have to convert object into map to make it iterable.
+"Ex:-3";
+// const myObject = {
+//     game1: 'NFS',
+//     game2: 'Spiderman'
+// }
+// const myObjectMap = new Map(Object.entries(myObject))
+// for (const [key, value] of myObjectMap) {
+//     console.log(key, ':-', value);
+// }
+
+"for in loop";
+
+"Ex:-1";
+// const myObject = {
+//     js: 'javascript',
+//     cpp: 'C++',
+//     rb: "ruby",
+//     swift: "swift by apple"
+// }
+// for (const key in myObject) {
+//     console.log(`${key} shortcut is for ${myObject[key]}`);
+// }
+
+"Ex:-2";
+// const programming = ["js", "rb", "py", "java", "cpp"]
+// for (const key in programming) {
+//     console.log(programming[key]);
+// }
+
+"Ex:-3";
+// const map = new Map()
+// map.set('IN', "India")
+// map.set('USA', "United States of America")
+// map.set('Fr', "France")
+// map.set('IN', "India")  
+
+//error cannot use for in loop directly on map
+// for (const key in map) {
+//     console.log(key);
+// }
+
+//correct method
+// for (const key of map.keys()) {
+//     console.log(key);
+// }
+
+"forEach loop";
+
+"Ex:-1";
+// const myArray = ['flash', "batman", "superman"]
+// myArray.forEach( (element, index) => {
+//     console.log(`Element is ${element} and index is ${index}`);
+// } )
+"Ex:-2";
+// const coding = ["js", "ruby", "java", "python", "cpp"]
+// coding.forEach( function (val){
+//     console.log(val);
+// } )
+"Ex:-3";
+// coding.forEach( (item) => {
+//     console.log(item);
+// } )
+"Ex:-4";
+// const coding = ["js", "ruby", "java", "python", "cpp"]
+// function printMe(item){
+//     console.log(item);
+// }
+// coding.forEach(printMe)
+"Ex:-5";
+// const coding = ["js", "ruby", "java", "python", "cpp"]
+// coding.forEach( (item, index, arr)=> {
+//     console.log(item, index, arr);
+// } )
+"Ex:-6";
+// const myCoding = [
+//     {
+//         languageName: "javascript",
+//         languageFileName: "js"
+//     },
+//     {
+//         languageName: "java",
+//         languageFileName: "java"
+//     },
+//     {
+//         languageName: "python",
+//         languageFileName: "py"
+//     },
+// ]
+
+// myCoding.forEach( (item) => {  
+//     console.log(item.languageName);
+// } )
+
+"Filter map and reduce in Java Script";
+
+// const coding = ["js", "ruby", "java", "python", "cpp"]
+
+"Ex:-1";
+// const values = coding.forEach( (item) => {
+//     console.log(item);
+//     return item
+// } )
+// console.log(values);
+"Ex:-2";
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const newNums = myNums.filter( (num) => {
+//     return num > 4
+// } )
+// console.log(newNums);
+"Ex:-3";
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const newNums = []
+// myNums.forEach( (num) => {
+//     if (num > 4) {
+//         newNums.push(num)
+//     }
+// } )
+// console.log(newNums);
+
+"Ex:-4";
+// const books = [
+//     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+//     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+//     { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+//     { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+//     { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+//     { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+//     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+//     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+//   ];
+//let userBooks = books.filter( (bk) => bk.genre === 'History')
+//   userBooks = books.filter( (bk) => { 
+//     return bk.publish >= 1995 && bk.genre === "History"
+// })
+
+//let userBooks= books.filter( (books) => books.publish === 1987 && books.genre === "Fiction" )
+//console.log(userBooks);
+
+"Ex:-5";
+// const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const newNums = myNumbers.map( (num) => { return num + 10})
+
+// const newNums = myNumbers
+//                 .map((num) => num * 10 )
+//                 .map( (num) => num + 1)
+//                 .filter( (num) => num >= 40)
+
+// console.log(newNums);
+
+"Ex:-6";
+const myNums = [1, 2, 3]
+//1
+// const myTotal = myNums.reduce(function (acc, currval) {
+//     console.log(`acc: ${acc} and currval: ${currval}`);
+//     return acc + currval
+// }, 0)
+
+//2
+// const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+// console.log(myTotal);
+
+//4
+// const shoppingCart = [
+//     {
+//         itemName: "js course",
+//         price: 2999
+//     },
+//     {
+//         itemName: "py course",
+//         price: 999
+//     },
+//     {
+//         itemName: "mobile dev course",
+//         price: 5999
+//     },
+//     {
+//         itemName: "data science course",
+//         price: 12999
+//     },
+// ]
+// const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+// console.log(priceToPay);
+
+"DOM introduction in javascript";
+
+//DOM= Document Object Model
+//Dom.html file is attached separately.
